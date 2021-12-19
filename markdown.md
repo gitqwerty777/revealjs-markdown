@@ -152,14 +152,14 @@ $H(p) = -p \log(p)$
 ```js
 /* JS */
 Reveal.on( 'customstate', function() {
-	console.log( '"customstate" has fired' );
+	alert( '"customstate" has fired' );
 } );
 ```
 
 ```css
 /* CSS */
 .customstate {
-  filter: drop-shadow(0 0 10px purple);
+  filter: text-shadow: black 0.1em 0.1em 0.2em;
 }
 ```
 
@@ -429,7 +429,7 @@ function SecondExample() {
 
 -----
 
-## 垂直/水平排列
+## 水平/垂直排列
 
 class `r-hstack` 和 `r-vstack`
 

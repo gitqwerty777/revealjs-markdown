@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./dist/reveal.css">
     <link rel="stylesheet" href="./dist/theme/black.css" id="theme">
     <link rel="stylesheet" href="./plugin/highlight/monokai.css">
+
+    <style>
+        .customstate {
+            filter: text-shadow: black 0.1em 0.1em 0.2em;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,8 +52,8 @@
             transition: "slide",
             plugins: [RevealZoom, RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath.KaTeX]
         });
-        Reveal.on('customevent', function () {
-            console.log('"customevent" has fired');
+        Reveal.on('customstate', function () {
+            alert('"customstate" has fired');
         });
     </script>
 
