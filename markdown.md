@@ -6,7 +6,7 @@
 
 - [Reveal.js](https://revealjs.com)可以使用html或markdown來製作簡報
 - 本篇以markdown為主，需要自訂的部份才會用html
-- 需搭配[原始碼](https://github.com/gitqwerty777/revealjs-markdown/blob/gh-pages/markdown.md)觀看
+- 需搭配[原始碼](https://github.com/gitqwerty777/revealjs-markdown/raw/gh-pages/markdown.md)觀看
 
 ---
 
@@ -109,8 +109,10 @@ $H(p) = -p \log(p)$
 ## 和 Markdown 的不同
 
 - 換行要加`<br>`
-- 可以插入`html`語法
+- 可以插入`html`語法，如影片
 - 可以使用`html`的註解語法設定簡報
+
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
 
 ---
 
@@ -429,8 +431,19 @@ function SecondExample() {
 
 ## 垂直/水平排列
 
-`h-stack`, `v-stack`
-TODO:
+class `r-hstack` 和 `r-vstack`
+
+<div class="r-hstack">
+    <p style="padding: 0.50em; background: #eee; margin: 0.25em">One</p>
+    <p style="padding: 0.75em; background: #eee; margin: 0.25em">Two</p>
+    <p style="padding: 1.00em; background: #eee; margin: 0.25em">Three</p>
+</div>
+
+<div class="r-vstack">
+    <p style="padding: 0.50em; background: #eee; margin: 0.25em">One</p>
+    <p style="padding: 0.75em; background: #eee; margin: 0.25em">Two</p>
+    <p style="padding: 1.00em; background: #eee; margin: 0.25em">Three</p>
+</div>
 
 -----
 
@@ -440,12 +453,6 @@ TODO:
 <a href="#">
   <img class="r-frame" src="assets/image1.png" width="200">
 </a>
-
----
-
-## 影片
-
-<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
 
 ---
 
