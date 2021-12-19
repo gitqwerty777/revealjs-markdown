@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - Markdown Example</title>
+
+    <link rel="stylesheet" href="../dist/reveal.css">
+    <link rel="stylesheet" href="../dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <div class="slides">
+            <!-- Use external markdown resource-->
+            <section data-markdown="markdown.md" data-separator="^\n---\n$" data-separator-vertical="^\n-----\n$"
+                data-separator-notes="^Note:">
+            </section>
+        </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/zoom/zoom.js"></script>
+    <script src="../plugin/math/math.js"></script>
+    <script src="../plugin/search/search.js"></script>
+
+    <script>
+
+        Reveal.initialize({
+            width: 1920,
+            height: 1080,
+            controls: true,
+            controlsTutorial: false,
+            progress: true,
+            history: true,
+            center: true,
+            hash: true,
+            slideNumber: "h/v",
+            transition: "slide",
+            plugins: [RevealZoom, RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealMath.KaTeX]
+        });
+        Reveal.on('customevent', function () {
+            console.log('"customevent" has fired');
+        });
+    </script>
+
+</body>
+
+</html>
