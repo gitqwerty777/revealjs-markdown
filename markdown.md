@@ -6,7 +6,7 @@
 
 - [Reveal.js](https://revealjs.com)可以使用html或markdown來製作簡報
 - 本篇以markdown為主，需要自訂的部份才會用html
-- 搭配[原始碼]()觀看效果更好 TODO:
+- 需搭配[原始碼](https://github.com/gitqwerty777/revealjs-markdown/blob/gh-pages/markdown.md)觀看
 
 ---
 
