@@ -159,7 +159,7 @@ Reveal.on( 'customstate', function() {
 ```css
 /* CSS */
 .customstate {
-  filter: text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 ```
 
@@ -233,7 +233,7 @@ Reveal.on( 'customstate', function() {
 
 ## 動畫順序
 
-`<!-- .element: class="fragment" -->`
+`<!-- .element: class="fragment" data-fragment-index="1" -->`
 
 - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
 - Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -289,7 +289,7 @@ function SecondExample() {
 
 ## 自訂動畫
 
-加上`<!-- .slide: data-auto-animate -->`，相同`data-id`的元素轉換
+加上`<!-- .slide: data-auto-animate -->`，可以對應下一頁相同`data-id`的元素
 
 <!-- .slide: data-auto-animate -->
 <div class="r-hstack justify-center">
@@ -330,6 +330,7 @@ function SecondExample() {
 ## 隱含動畫
 
 <!-- .slide: data-auto-animate -->
+加上`<!-- .slide: data-auto-animate -->`，不需要`data-id`，只要有新增/移除元素會有動畫
 # Implicit
 
 -----
@@ -406,9 +407,9 @@ function SecondExample() {
 
 ---
 
-## 主題
+## 更換主題
 
-在html中修改此行`<link rel="stylesheet" href="../dist/theme/white.css" id="theme">`
+在html中修改css檔案(路徑)
 
 ---
 
@@ -419,7 +420,7 @@ function SecondExample() {
 
 -----
 
-## 疊加元素
+## 重疊元素
 
 <div class="r-stack">
   <img class="fragment fade-out" data-fragment-index="0" src="https://placekitten.com/450/300" width="450" height="300">
@@ -447,7 +448,7 @@ class `r-hstack` 和 `r-vstack`
 
 -----
 
-## 外框 + 超連結
+## 圖片外框 + 超連結
 
 <img src="assets/image1.png" width="200">
 <a href="#">
