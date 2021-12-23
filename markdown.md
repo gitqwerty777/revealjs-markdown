@@ -72,7 +72,7 @@
 
 ## 程式碼
 
-使用highlight.js
+使用`highlight.js`
 
 ```php
     public function foo()
@@ -176,7 +176,7 @@ Reveal.on( 'customstate', function() {
 
 [https://revealjs.com/fragments/](https://revealjs.com/fragments/)
 
-<span class="fragment">使用`<span class="fragment">`</span>
+<span class="fragment">使用 `fragment` class</span>
 <span class="fragment">來</span>
 <span class="fragment">分段</span>
 <span class="fragment">顯示</span>
@@ -226,7 +226,7 @@ Reveal.on( 'customstate', function() {
 <!-- .slide: data-background-transition="zoom" data-background="#4d7e65"-->
 ## 背景轉場
 
-- 全域(寫在`.html`): `Reveal.configure({ backgroundTransition: 'zoom' })`
+- 全域(寫在`.html`檔): `Reveal.configure({ backgroundTransition: 'zoom' })`
 - 單張簡報 `<!-- .slide: data-background-transition="zoom"-->`
 
 -----
@@ -464,3 +464,11 @@ class `r-hstack` 和 `r-vstack`
 - [視差背景](https://revealjs.com/backgrounds/#parallax-background)
 - [自訂快捷鍵](https://revealjs.com/keyboard/)
 - [第三方Plugin](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware)
+
+---
+
+## End
+
+- 詳細設定請參考 [本簡報repo](https://github.com/gitqwerty777/revealjs-markdown) 的兩個檔案
+  - index.html
+  - markdown.md
